@@ -1,0 +1,39 @@
+{
+  "name": "subsent",
+  "version": "0.9.1",
+  "description": "Convert subtitles to sentences",
+  "main": "index.js",
+  "bin": {
+    "subsent": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "tape test/start.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vntk/subsent.git"
+  },
+  "keywords": [
+    "sentence",
+    "subsent",
+    "toolkit",
+    "vietnamese",
+    "vntk"
+  ],
+  "author": "Vunb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vntk/subsent/issues"
+  },
+  "homepage": "https://github.com/vntk/subsent",
+  "dependencies": {
+    "async": "2.0.1",
+    "commander": "2.9.0",
+    "lodash": "4.15.0",
+    "subtitle": "0.1.2"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}
