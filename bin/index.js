@@ -62,7 +62,9 @@ program
         }
 
         if (isDirectory) {
-            logger.info("Directory currently does not support!");
+            text.forEach(function (dirname) {
+                subsent.toJsonDir(dirname);
+            });
         } else {
             subsent.toJson(text);
         }
@@ -94,7 +96,9 @@ program
         }
 
         if (isDirectory) {
-            logger.info("Directory currently does not support!");
+            text.forEach(function (dirname) {
+                subsent.toTextDir(dirname);
+            });
         } else {
             subsent.toText(text);
         }
