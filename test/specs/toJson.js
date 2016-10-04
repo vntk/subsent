@@ -1,9 +1,9 @@
-var test = require("tape");
-var subsent = require("../../lib");
-var nodedir = process.cwd();
+var test = require("tape")
+    , subsent = require("../../lib")
+    ;
 
 test("toJson", function (t) {
-    subsent.toJson([`${nodedir}/demo.srt`], function (err) {
+    subsent.toJson([`samples/demo.srt`], function (err) {
         console.log("OK !!!!")
         t.ok(!err);
         t.end();
