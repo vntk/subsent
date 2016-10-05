@@ -11,11 +11,62 @@ Convert subtitles to sentences!
 
 # API Usage
 
-Todo: Need to update
+Homepage: https://github.com/vntk/subsent
 
-Please check homepage: https://github.com/vntk/subsent
+Support format: `srt`.
 
-Support: srt, ass format.
+## Convert a file
+
+To text:
+
+```js
+subsent text [filename.srt]
+```
+
+To json:
+
+```js
+subsent json [filename.srt]
+```
+
+## Convert a directory
+
+To text:
+
+```js
+subsent text [filename.srt] -d
+```
+
+To json:
+
+```js
+subsent json [filename.srt] -d
+```
+
+Help: use command `help`
+
+```
+subsent help
+
+  Usage: index [options] [command]
+
+
+  Commands:
+
+    version
+    tojson|json [options] [text...]  Convert subtitle to json file
+    totext|text [options] [text...]  Convert subtitle to text file
+
+  Options:
+
+    -h, --help     output usage information
+    -v, --version  output the version number
+```
+
+# Supported character sets
+
+* UTF-8
+* ~~UTF-16~~
 
 LICENSE
 ========
